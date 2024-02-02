@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_restaurante_encuesta,restaurante.encuesta,model_restaurante_encuesta,,1,1,1,1
+access_restaurante_punto_de_venta,restaurante.punto_de_venta,model_restaurante_punto_de_venta,,1,1,1,1
