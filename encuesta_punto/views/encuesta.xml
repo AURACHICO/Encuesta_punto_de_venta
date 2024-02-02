@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- tree -->
+        <record id="view_encuesta_tree" model="ir.ui.view">
+            <field name="name">Encuesta Tree</field>
+            <field name="model">restaurante.encuesta</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="punto_venta_id"/>
+                    <field name="comodidad" widget="star_rating"/>
+                    <field name="comida" widget="star_rating" />
+                    <field name="atencion" widget="star_rating"/>
+                    <field name="musica" widget="star_rating"/>
+                    <field name="tiempo_espera" widget="star_rating"/>
+                    <field name="mesero" widget="star_rating"/>
+                    <field name="notas_cliente"/>
+                    <!-- Otros campos -->
+                </tree>
+            </field>
+        </record>
+        <!-- formulario -->
+        <record model="ir.ui.view" id="view_encuesta_form">
+            <field name="name">restaurante.encuesta.form</field>
+            <field name="model">restaurante.encuesta</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group>
+                        <field name="name"/>
+                        <field name="punto_venta_id"/>
+                        <field name="comodidad"/>
+                        <field name="comida"/>
+                        <field name="atencion"/>
+                        <field name="musica"/>
+                        <field name="tiempo_espera"/>
+                        <field name="mesero"/>
+                        <field name="notas_cliente"/>
+                        <!-- Otros campos -->
+                    </group>
+                </form>
+            </field>
+            
+        </record>
+        <record model="ir.actions.act_window" id="encuesta_punto.action_window_encuesta">
+            <field name="name">Encuesta</field>
+            <field name="res_model">restaurante.encuesta</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,11 @@
+<odoo>
+    <data>
+        <!-- Top menu item -->
+        <menuitem name="Puntos" id="encuesta_punto.menu_root"/>
+
+            <!-- menu categories -->
+        <menuitem name="Encuestas" id="encuesta_punto.encuesta" parent="encuesta_punto.menu_root" action="encuesta_punto.action_window_encuesta" sequence="2"/>
+        <menuitem name="Punto de venta" id="encuesta_punto.punto" parent="encuesta_punto.menu_root" action="encuesta_punto.action_window_puntos" sequence="1"/>
+
+    </data>
+</odoo>
